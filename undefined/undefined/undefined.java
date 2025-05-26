@@ -1,9 +1,7 @@
-class Kata {
-    public static String getMiddle(String word) {
-        if (word.length() % 2 != 0) {
-            return String.valueOf(word.charAt(word.length() / 2));
-        } else {
-            return word.substring(word.length() / 2 - 1, word.length() / 2 + 1);
-        }
-    }
+public class OppositesAttract {
+​
+  public static boolean isLove(final int flower1, final int flower2) {
+    return (flower1 % 2 == 0 & flower2 % 2 == 1) || (flower2 % 2 == 0 & flower1 % 2 == 1);
+  }
+  
 }
